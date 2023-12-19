@@ -1,5 +1,6 @@
 body{
     background-color: #FFC107;
+    margin: 0;
 }
 
 
@@ -10,7 +11,7 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 40% 40% 10%;
     grid-template-areas: 
-    "hd hd"
+    "hd1 hd2"
     "n  n"
     "s1 s2"
     "ft ft";
@@ -24,18 +25,35 @@ h2{
     font-size: 35px;
 }
 
-a{
-    font-size: 30px;
-}
 
 header{
-    grid-area: hd;
+    grid-area: hd1;
     background-color: #FFC107;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: space-between;
+    background-color: #c49d02;
 }
+
+header.hd2{ 
+    grid-area: hd2;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #c49d02;
+}
+
+header.hd2 a {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: green;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
 main{
     grid-area: n;
     font-family:'Times New Roman', Times, serif;
@@ -46,9 +64,8 @@ main{
 
 section.s1 {
     grid-area: s1;
-    font-family:'Times New Roman', Times, serif;
-    text-align: stretch;
-    background-color: white;
+    font-family: 'Playfair Display', serif;
+    background-color:#c49d02;
 }
 
 section.s2{
