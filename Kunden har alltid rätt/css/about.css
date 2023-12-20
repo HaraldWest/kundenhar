@@ -34,6 +34,7 @@ header{
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
+    align-items: center;
     background-color: #c49d02;
     padding-left: 5px;
 }
@@ -81,7 +82,6 @@ section.s1{
 
 section.s2 {
     grid-area: s2;
-    text-align: stretch;
     background-color: #c49d02;
     font-family: 'Playfair Display', serif;
     padding: 15px;
